@@ -312,7 +312,7 @@ def show_developer_info():
 
 dev_btn_bottom=tk.Button(root, text="Developer Info", command=show_developer_info, bg="#FFD400", fg="black"); dev_btn_bottom.pack(pady=(6,12))
 
-TOOL_INFO_TEXT = ("Mode: Domain = WHOIS + multi-engine email/onion search. Username = probe common social platforms for profile existence.\n\nStealth Mode randomizes UA and adds small pacing. Tor option will route through a local SOCKS proxy if enabled.")
+TOOL_INFO_TEXT = ("Developed Using Python Langage. /n Mode: Domain = WHOIS + multi-engine email/onion search. Username = probe common social platforms for profile existence.\n\nStealth Mode randomizes UA and adds small pacing. Tor option will route through a local SOCKS proxy if enabled.")
 def show_tool_info():
     t=tk.Toplevel(root); t.title("Tool Info"); t.geometry("560x220")
     tk.Label(t, text="Tool Info", font=("Segoe UI",13,"bold")).pack(anchor="w", padx=12,pady=(8,4))
@@ -367,7 +367,7 @@ def show_best_tools():
     if osint_window and tk.Toplevel.winfo_exists(osint_window):
         osint_window.lift(); osint_window.focus_force(); return
     osint_window = tk.Toplevel(root); bt=osint_window
-    bt.title("OSINT Image — Wayback & EXIF"); bt.geometry("920x520")
+    bt.title("OSINT Image — Wayback & EXIF"); bt.geometry("920x720")
     header_frame = tk.Frame(bt); header_frame.pack(fill="x", padx=12, pady=(8,4))
     tk.Label(header_frame, text="OSINT Image — Wayback snapshots & Image EXIF", font=("Segoe UI",14,"bold")).pack(side="left")
     tk.Label(header_frame, text="Wayback snapshots + EXIF & reverse-image helpers", fg="gray").pack(side="left", padx=12)
